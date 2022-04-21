@@ -1,0 +1,420 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    color: #434656;
+}
+
+a {
+    color: #434656;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #434656;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#myName {
+    /* border: 5px solid blue; */
+    color: white;
+    width: 30%;
+}
+
+#myName h2 {
+    text-align: center;
+}
+
+#myNav {
+    /* border: 5px solid blue; */
+    width: 70%;
+}
+
+header nav {
+    background: #434656;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header ul {
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+header li {
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+header a {
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 7px 7px;
+    border: 3px solid transparent;
+}
+
+header a:hover {
+    /* color: rgb(45, 43, 43); */
+    border: 3px solid;
+    border-color: #4b6cb7;
+    border-radius: 10px;
+    transition: border 0.5s ease-out;
+}
+
+.header-prez {
+    min-height: 300px;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.header-prez-bis {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-prez h1 {
+    /* font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    text-align: center;
+    margin: 0; */
+  }
+
+hr {
+    border: 2px solid #434656;
+    width: 50%;
+}
+  
+.title {
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    text-align: center;
+    margin: 0;
+
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
+
+#a-propos {
+    height: auto;
+    background: #434656;
+    background: -webkit-linear-gradient(to bottom, #434656, #636882);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434656, #636882); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+#a-propos p {
+    padding: 0 30px;
+    text-align: center;
+}
+
+
+
+
+#cv {
+    height: auto;
+    background-color: white;
+    padding-top:60px;
+    padding-bottom: 75px;
+}
+
+#cv h2 {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+#containe-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#containe-table > * {
+    width: 300px;
+    padding: 20px 50px;
+}
+
+#cv table {
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+#cv tr, td, th {
+    padding: 25px 10px;
+}
+
+table img {
+    width: 50px;
+    border-radius: 8px;
+}
+
+#cv h3 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+#portfolio {
+    height: auto;
+    background: #434656;
+    background: -webkit-linear-gradient(to bottom, #434656, #636882);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434656, #636882); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 0;
+}
+
+#portfolio h2 {
+    color: white;
+    padding-bottom: 30px;
+}
+
+#portfolio > div {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+
+}
+
+.project {
+    margin: 20px 20px;
+    width: 450px;
+    height: 350px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: white;
+    border: 0.2px solid rgb(243, 240, 240);
+    border-radius: 5px;
+}
+
+.title-project {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project h5 {
+}
+
+.apercu-project {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 58%;
+    padding-bottom: 5px;
+
+}
+
+.apercu-project img {
+    height: auto;
+    border: 1px solid grey;
+}
+
+.containe-doc {
+    /* border: 1px solid red; */
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.doc-code {
+    width: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containe-doc h6 {
+    padding-right: 3px;
+}
+
+.doc-code img {
+    width: 20px;
+}
+
+.langages {
+    width: 100%;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langages * {
+    width: 20px;
+    padding: 0 5px;
+}
+
+.langages h6 {
+    padding-right: 38px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    height: auto;
+    background-color: white;
+    padding: 40px 0;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h4, h5 {
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+
+#email {
+    text-decoration: none;
+} 
+
+#email:hover {
+    text-decoration: underline;
+}
+
+#name-email {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#logos-contact {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+footer img {
+    width: 30px;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+@media screen and (max-width: 665px) {
+    #myName h2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    
+    #myNav {
+        /* border: 5px solid blue; */
+        width: 100vw;
+    }
+    
+    header nav {
+        /* border: 5px solid red; */
+        background: #434656;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    
+    header ul {
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+    
+    header li {
+        /* border: 1px solid green; */
+        width: fit-content;
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    
+    header a {
+        white-space: nowrap;
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 7px 7px;
+        border: 3px solid transparent;
+    }
+    
+    header a:hover {
+        border: 3px solid;
+        border-color: #4b6cb7;
+        border-radius: 10px;
+        transition: border 0.5s ease-out;
+    }
+
+    .title {
+        font-size: 46px;
+        padding-top: 30px;
+    }
+
+    .header-prez-bis h2 {
+        padding: 0 20px;
+    }
+
+    #myName h2 {
+        display: none;
+    }
+
+}
